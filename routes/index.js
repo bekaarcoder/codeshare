@@ -11,4 +11,12 @@ router.get("/about", function(req, res, next) {
   res.render("about", { title: "CodeShare - About" });
 });
 
+router.get("/contact", function(req, res, next) {
+  res.render("contact", { title: "CodeShare - Contact" });
+});
+
+router.post("/contact", function(req, res, next) {
+  res.render("thank", { title: "CodeShare - Share Code With Anyone" });
+});
+
 module.exports = router;
